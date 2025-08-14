@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Swan Botanicals</title>
+    <style>
+        :root {
+            --tree-green: #2e4e3f;
+            --golden: #d4af37;
+            --grey: #555555;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--white);
+            color: var(--grey);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--tree-green);
+            color: var(--white);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--golden);
+        }
+
+        nav a {
+            color: var(--white);
+            margin-left: 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: var(--golden);
+        }
+
+        /* Products Section */
+        .products-page {
+            padding: 50px 10%;
+            background-color: var(--white);
+            text-align: center;
+        }
+
+        .products-page h1 {
+            color: var(--tree-green);
+            margin-bottom: 30px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: var(--white);
+            border: 2px solid var(--golden);
+            border-radius: 8px;
+            padding: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            max-height: 250px;
+            object-fit: contain;
+            border-radius: 6px;
+            background-color: #fff;
+            padding: 5px;
+        }
+
+        .product-card h3 {
+            margin-top: 10px;
+            color: var(--tree-green);
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--tree-green);
+            color: var(--white);
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <img src="C:\Users\Devi Sri R\Pictures\Screenshots\Screenshot 2025-08-12 150916.png" alt="Swan Botanicals Logo">
+            <div class="logo-text">Swan Botanicals</div>
+        </div>
+        <nav>
+            <a href="C:\Users\Devi Sri R\Desktop\swam botanicals\index.html">Home</a>
+            <a href="C:\Users\Devi Sri R\Desktop\swam botanicals\product.html" class="active">Products</a>
+            <a href="C:\Users\Devi Sri R\Desktop\swam botanicals\about.html">About</a>
+            <a href="C:\Users\Devi Sri R\Desktop\swam botanicals\contacts.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Products Section -->
+    <section class="products-page">
+        <h1>Our Products</h1>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="C:\Users\Devi Sri R\Downloads\WhatsApp Image 2025-08-11 at 18.35.44.jpeg" alt="conditioner">
+                <h3>GLOHA Conditioner</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="C:\Users\Devi Sri R\Pictures\Screenshots\Screenshot 2025-08-11 191014.png" alt="shampoo">
+                <h3>GLOHA Shampoo</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="C:\Users\Devi Sri R\Pictures\Screenshots\Screenshot 2025-08-11 191141.png" alt="hair oil">
+                <h3>GLOHA Hair Oil</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Swan Botanicals. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

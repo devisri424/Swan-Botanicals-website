@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Swan Botanicals</title>
+
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --tree-green: #2e4e3f;
+            --golden: #d4af37;
+            --grey: #555555;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--white);
+            color: var(--grey);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--tree-green);
+            color: var(--white);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: var(--white);
+            margin-left: 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: var(--golden);
+        }
+
+        /* Contact Section */
+        .contact-page {
+            padding: 50px 10%;
+            background-color: var(--white);
+        }
+
+        .contact-page h1 {
+            color: var(--tree-green);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+            background: var(--white);
+            border: 2px solid var(--golden);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+            color: var(--tree-green);
+            display: block;
+            margin-top: 10px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid var(--grey);
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact-form button {
+            margin-top: 15px;
+            background-color: var(--tree-green);
+            color: var(--white);
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: var(--golden);
+            color: var(--tree-green);
+        }
+
+        /* Map Frame */
+        .map {
+            flex: 1;
+            min-width: 300px;
+            border: 2px solid var(--golden);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        /* Social Icons */
+        .social-icons {
+            text-align: center;
+            padding: 10px;
+            background: #f9f9f9;
+        }
+
+        .social-icons h3 {
+            color: var(--tree-green);
+            margin-bottom: 10px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .social-icons a.instagram {
+            color: #E1306C;
+        }
+
+        .social-icons a.facebook {
+            color: #3b5998;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--tree-green);
+            color: var(--white);
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Swan Botanicals</div>
+        <nav>
+            <a href="C:\Users\Devi Sri R\Desktop\swam botanicals\index.html">Home</a>
+            <a href="C:\Users\Devi Sri R\Desktop\swam botanicals\product.html">Products</a>
+            <a href="C:\Users\Devi Sri R\Desktop\swam botanicals\about.html">About</a>
+            <a href="C:\Users\Devi Sri R\Desktop\swam botanicals\contacts.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-page">
+        <h1>Contact Us</h1>
+        <div class="contact-container">
+            
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Your Email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Map + Social Links -->
+            <div class="map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.501717621625!2d80.4252069!3d16.3142238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f02f25b2cbe1%3A0x3e8e8c9f3a8b5a89!2sMahatma%20Gandhi%20Inner%20Ring%20Rd%2C%20Guntur%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1691834012345" 
+                    allowfullscreen="" loading="lazy">
+                </iframe>
+                <div class="social-icons">
+                    <h3>Follow Us</h3>
+                    <a href="https://www.instagram.com/swan.botanicals/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/swanbotanicals" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Swan Botanicals. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
